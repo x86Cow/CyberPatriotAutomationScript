@@ -1,8 +1,8 @@
 #!bin/sh
 
 # UPDATES
-sudo apt update 1> /dev/null 2> /dev/null
-sudo apt upgrade 1> /dev/null 2> /dev/null
+sudo apt update 1> /dev/null 
+sudo apt upgrade 1> /dev/null
 echo "System Updated!"
 
 # remove unwanted files
