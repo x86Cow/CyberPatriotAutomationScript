@@ -1,8 +1,8 @@
-#!bin/sh
+#!/bin/bash
 
 # UPDATES
-sudo apt-get update 1> /dev/null 
-sudo apt-get upgrade 1> /dev/null
+sudo apt-get update # 1> /dev/null 
+sudo apt-get upgrade # 1> /dev/null
 echo "System Updated!"
 
 # remove unwanted files
@@ -12,3 +12,7 @@ echo "fileList.txt created!"
 
 # edit FileList to remove files from list that are wanted
 vi fileList.txt
+
+rm -r `cat fileList.txt`
+echo 'files removed'
+rm fileList.txt
