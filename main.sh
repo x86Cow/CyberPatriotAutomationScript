@@ -16,3 +16,10 @@ vi fileList.txt
 rm -r `cat fileList.txt`
 echo 'files removed'
 rm fileList.txt
+
+# UFW
+sudo systemctl enable ufw.service
+sudo systemctl start ufw.service
+
+
+
