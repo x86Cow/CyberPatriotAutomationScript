@@ -17,12 +17,14 @@ rm -r `cat fileList.txt`
 echo 'files removed'
 rm fileList.txt
 
-# UFW
+# UFW 
 # sudo systemctl enable ufw.service
 # sudo systemctl start ufw.service
 
 
 # Password Generation for users
 python3 passwordGen.py
+
+sudo echo "allow guest = false" >> /etc/lightdm/lighdm.conf
 
 
