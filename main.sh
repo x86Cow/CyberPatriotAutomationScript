@@ -18,8 +18,11 @@ echo 'files removed'
 rm fileList.txt
 
 # UFW
-sudo systemctl enable ufw.service
-sudo systemctl start ufw.service
+# sudo systemctl enable ufw.service
+# sudo systemctl start ufw.service
 
+
+# Password Generation for users
+python3 passwordGen.py
 
 
